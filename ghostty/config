@@ -1,0 +1,16 @@
+## Fonts
+font-family = BerkeleyMono Nerd Font Mono
+font-size = 14
+
+## Hide macos window
+macos-titlebar-style = hidden
+
+## Themes
+#theme = Dark Modern
+#theme = ayu
+theme = catppuccin-mocha
+
+# To generally disable most ligatures
+font-feature = "-calt"
+font-feature = "-liga"
+font-feature = "-dlig"
