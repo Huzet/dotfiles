@@ -1,0 +1,9 @@
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>q']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>w']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>e']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>r']"
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf 
+~/.fzf/install
+
+
