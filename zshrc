@@ -27,7 +27,7 @@ printf "%b""⠀
 # Scripts
 export MY_CODE_DIR="$HOME/Documents/code"
 export MY_NOTES_DIR="$HOME/Documents/notes"
-export MY_DOTFILES="$HOME/my_config"
+export MY_DOTFILES="$HOME/dotfiles"
 export PATH="$HOME/scripts:$PATH"
 
 # Prompt
