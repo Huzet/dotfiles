@@ -27,7 +27,7 @@ printf "%b""⠀
 # Scripts
 export MY_CODE_DIR="$HOME/Documents/code"
 export MY_NOTES_DIR="$HOME/Documents/notes"
-export MY_DOTFILES="$HOME/my_config/dotfiles"
+export MY_DOTFILES="$HOME/my_config"
 export PATH="$HOME/scripts:$PATH"
 
 # Prompt
@@ -47,6 +47,13 @@ alias ll="ls -lah"
 alias ssh_pi_hole="ssh chekko@192.168.0.13"
 alias ssh_pi_linux="ssh chekko@192.168.0.89"
 alias ssh_ubuntu="ssh chekko@192.168.0.4"
+
+alias nvimlazy='NVIM_APPNAME=nvim-lazyvim nvim'
+alias nvimcustom='NVIM_APPNAME=nvim nvim'
+
+# streetmerchant
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
 
 # Text Editor
 export EDITOR="nvim"
@@ -100,4 +107,5 @@ setopt HIST_REDUCE_BLANKS
 autoload -Uz run-help
 
 # Source private zshrc files
-./private_zshrc.sh
+./.private_zshrc.sh
+

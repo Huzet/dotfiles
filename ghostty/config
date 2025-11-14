@@ -8,13 +8,12 @@ macos-titlebar-style = hidden
 ## Themes
 #theme = Dark Modern
 #theme = ayu
-#theme = catppuccin-mocha
-theme = Horizon
+theme = catppuccin Mocha
 
 # To generally disable most ligatures
 font-feature = "-calt"
 font-feature = "-liga"
 font-feature = "-dlig"
 
-background-opacity = .9
+# background-opacity = .9
 
