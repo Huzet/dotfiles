@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CODE_DIR="$HOME/code"
+CODE_DIR=$MY_CODE_DIR
 TMPFILE=$(mktemp)
 
 # Run popup with fzf inside, redirect selection to TMPFILE
