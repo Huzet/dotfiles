@@ -28,7 +28,6 @@ printf "%b""⠀
 export MY_CODE_DIR="$HOME/Documents/code"
 export MY_NOTES_DIR="$HOME/Documents/notes_vault"
 export MY_DOTFILES="$HOME/dotfiles"
-export PATH="$HOME/scripts:$PATH"
 
 # Prompt
 PROMPT="%F{cyan}%. %? >%f"
@@ -39,10 +38,9 @@ autoload -U colors && colors
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Alias
-alias ~="cd ~"
 alias ls='ls -GpF --color=auto'
 alias grep='grep --color=auto'
-alias codedir="cd ~/projects/code/"
+alias codedir="cd $MY_CODE_DIR"
 alias ll="ls -lah"
 alias ssh_pi_hole="ssh chekko@192.168.0.13"
 alias ssh_pi_linux="ssh chekko@192.168.0.89"
@@ -51,15 +49,11 @@ alias ssh_ubuntu="ssh chekko@192.168.0.4"
 alias nvimlazy='NVIM_APPNAME=nvim-lazyvim nvim'
 alias nvimcustom='NVIM_APPNAME=nvim nvim'
 
-# streetmerchant
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
-
 # Text Editor
 export EDITOR="nvim"
 
 # Customize Path
-export PATH=$HOME/bin:$PATH
+export PATH="$HOME/scripts:$HOME/bin:$PATH"
 
 # Git
 autoload -Uz compinit && compinit
@@ -74,7 +68,6 @@ fi
 
 # FZF
 bindkey '^R' history-incremental-search-backward
-bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --hidden'
@@ -107,5 +100,4 @@ setopt HIST_REDUCE_BLANKS
 autoload -Uz run-help
 
 # Source private zshrc files
-./.private_zshrc.sh
-
+[ -f ~/.private_zshrc ] && source ~/.private_zshrc
