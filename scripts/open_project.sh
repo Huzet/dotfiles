@@ -14,5 +14,5 @@ rm "$TMPFILE"
 [ -z "$project" ] && exit
 
 # Open new tmux window with nvim in project directory
-tmux new-window -c "$CODE_DIR/$project" -n "$project" "nvim"
+tmux new-window -c "$CODE_DIR/$project" -n "$project" \; send-keys "nvim" enter
 
