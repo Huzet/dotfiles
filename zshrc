@@ -61,9 +61,6 @@ autoload -Uz compinit && compinit
 set -o vi
 
 bindkey -v
-if [[ $TERM == xterm ]]; then
-    TERM=xterm-256color
-fi
 
 # FZF
 bindkey '^R' history-incremental-search-backward
