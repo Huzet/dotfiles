@@ -42,9 +42,6 @@ alias ls='ls -GpF --color=auto'
 alias grep='grep --color=auto'
 alias codedir="cd $MY_CODE_DIR"
 alias ll="ls -lah"
-alias ssh_pi_hole="ssh chekko@192.168.0.13"
-alias ssh_pi_linux="ssh chekko@192.168.0.89"
-alias ssh_ubuntu="ssh chekko@192.168.0.4"
 
 alias nvimlazy='NVIM_APPNAME=nvim-lazyvim nvim'
 alias nvimcustom='NVIM_APPNAME=nvim nvim'
@@ -54,6 +51,8 @@ export EDITOR="nvim"
 
 # Customize Path
 export PATH="$HOME/scripts:$HOME/bin:$PATH"
+# Add Rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Git
 autoload -Uz compinit && compinit
@@ -100,4 +99,4 @@ setopt HIST_REDUCE_BLANKS
 autoload -Uz run-help
 
 # Source private zshrc files
-[ -f ~/.private_zshrc ] && source ~/.private_zshrc
+[ -f ~/dotfiles/zshrc_private ] && source ~/dotfiles/zshrc_private
